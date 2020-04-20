@@ -7,6 +7,7 @@
 const path = require('path');
 
 module.exports = {
+  target: 'node',
   mode: 'production',
   entry: {
     index: './src/index.ts',
@@ -14,7 +15,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'bin'),
     filename: '[name].js',
-    libraryTarget: 'commonjs',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
